@@ -4,6 +4,7 @@ num1 = random.randint(1, 100)
 
 while True:
     hello = input("pick a number :)")
+    hello = hello.strip()
     if hello.isdigit():
         hello = int(hello)
         if hello == num1:
