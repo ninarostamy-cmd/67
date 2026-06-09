@@ -5,7 +5,7 @@ import random
 #67
 #67
 #67
-
+print("welcome the guessing game")
 def i_dont_even_know_anymore(b):
     while True:
         a = input(b)
