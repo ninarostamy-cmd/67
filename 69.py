@@ -1,32 +1,38 @@
 import random
 
-while True:
-    number1 = input("minimum - ").strip()
-    if number1.isdigit():
-        number1 = int(number1)
-        break
+#67
+#67
+#67
+#67
+#67
 
-while True:
-    number2 = input("maximum - ").strip()
-    if number2.isdigit():
-        number2 = int(number2)
-        break
+def i_dont_even_know_anymore(b):
+    while True:
+        a = input(b)
+        a = a.strip()
+        if a.isdigit():
+            a = int(a)
+            return a
+
+
+number1 = i_dont_even_know_anymore("minimum - ")
+
+
+number2 = i_dont_even_know_anymore("maximum - ")
 
 num1 = random.randint(number1, number2)
 num2 = 0
 
 while True:
-    hello = input("pick a number :)")
+    hello = i_dont_even_know_anymore("pick a number :) ")
     num2 += 1
-    hello = hello.strip()
-    if hello.isdigit():
-        hello = int(hello)
-        if hello == num1:
-            print(f"you have to much aura.It took bro {num2} tries...")
-            break
 
-        if hello < num1:
-            print("go higher STOOBID")
+    if hello == num1:
+        print(f"you have to much aura.It took bro {num2} tries...")
+        break
 
-        if hello > num1:
-            print("go lower or u have low iq")
+    if hello < num1:
+        print("go higher STOOBID")
+
+    if hello > num1:
+        print("go lower or u have low iq")
