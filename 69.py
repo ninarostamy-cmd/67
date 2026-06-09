@@ -1,6 +1,18 @@
 import random
 
-num1 = random.randint(1, 100)
+while True:
+    number1 = input("minimum - ").strip()
+    if number1.isdigit():
+        number1 = int(number1)
+        break
+
+while True:
+    number2 = input("maximum - ").strip()
+    if number2.isdigit():
+        number2 = int(number2)
+        break
+
+num1 = random.randint(number1, number2)
 num2 = 0
 
 while True:
